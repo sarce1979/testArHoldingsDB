@@ -1,0 +1,10 @@
+﻿CREATE TABLE dbo.Orden
+(
+	ID INT IDENTITY PRIMARY KEY,
+	NumeroOrden INT NULL,
+	SubTotal NUMERIC(10,2) NOT NULL,
+	TotalImpuestos NUMERIC(10,2) NOT NULL,
+	Total NUMERIC(10,2) NOT NULL,
+	FechaCreacion DATETIME2(0) NOT NULL,
+	FechaOrden DATETIME2(0) NULL
+)

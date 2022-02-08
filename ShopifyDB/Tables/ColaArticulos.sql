@@ -1,0 +1,9 @@
+﻿CREATE TABLE dbo.ColaArticulos
+(
+	ID INT IDENTITY PRIMARY KEY,
+	SKU INT NOT NULL,
+	Cantidad NUMERIC(10, 2) NOT NULL,
+	FechaRegistro DATETIME2(0) NOT NULL,
+	FechaActualizacion DATETIME2(0) NOT NULL,
+	Sincronizado BIT DEFAULT 0 
+)
